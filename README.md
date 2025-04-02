@@ -46,7 +46,7 @@ Press `Ctrl+C` to stop monitoring.
 ## See also
 *My other small but snappy Python tools and automation,*
 
-* [github-stargazers)](https://github.com/TAbdiukov/github-stargazers) – Python 3.13 – Github Stargazer Scraper.
+* [github-stargazers](https://github.com/TAbdiukov/github-stargazers) – Python 3.13 – Github Stargazer Scraper.
 * [img2pdf_helper](https://github.com/TAbdiukov/img2pdf_helper) – Simplify img2pdf configuration and usage.
 * **<ins>file-watchdog</ins>** – Python 3.14 – file system Watchdog wrapper.
 
