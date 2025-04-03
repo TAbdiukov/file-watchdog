@@ -1,5 +1,5 @@
 # file-watchdog
-Python 3.14 – file system Watchdog wrapper
+Python 3.14 – file system Watchdog wrapper.
 
 ## Install
 
