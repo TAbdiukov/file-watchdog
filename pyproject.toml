@@ -23,6 +23,7 @@ classifiers = [
   "Operating System :: OS Independent",
   "Topic :: System :: Monitoring",
   "Topic :: System :: Filesystems",
+  "Topic :: Utilities",
   "Intended Audience :: Information Technology",
   "Intended Audience :: System Administrators",
   "Intended Audience :: Developers",
