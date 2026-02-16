@@ -7,25 +7,30 @@ Python 3.14 – file system Watchdog wrapper.
 pip install -r requirements.txt
 ```
 
-## Configure Directory
-
-* Open or create `DIRECTORY.txt` in repo.
-* Add the absolute path of the directory you want to monitor.
-* Save and close the file.
-
 ## Usage
 
-```
-python watchdog.py
-```
-
-For example, if `DIRECTORY.txt` contains:
+Pass the directory path you want to monitor as an argument:
 
 ```
-C:\Users\User\Documents
+python file-watchdog.py <DIRECTORY_PATH>
 ```
 
-Running `watchdog.py` will monitor changes in `C:\Users\User\Documents` and log them.
+Examples:
+
+Windows:
+```
+python file-watchdog.py "C:\Users\User\Documents"
+```
+
+macOS / Linux:
+```
+python file-watchdog.py /Users/user/Documents
+````
+
+Before monitoring starts, the script will print whether the path:
+- was found or not found,
+- is a directory (not a file),
+- is accessible (permission check).
 
 ## Output
 
@@ -34,6 +39,7 @@ Running `watchdog.py` will monitor changes in `C:\Users\User\Documents` and log 
 	[HEX_TIMESTAMP] event_type (e.g., modified): path\to\file.log
 	```
 * Events are also saved to a log file named `file_events_<timestamp>.log`, e.g., `file_events_6613a3f1.log`.
+* The log file is created in the **current working directory**.
 * Log file entries use ISO timestamp format:
 	```
 	[2024-04-02T12:34:56.789012] event_type (e.g., modified): path\to\file.log
@@ -52,3 +58,4 @@ Press `Ctrl+C` to stop monitoring.
 
 ----------------------------------
 **Tim Abdiukov**
+
