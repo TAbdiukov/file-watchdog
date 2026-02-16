@@ -87,15 +87,15 @@ def main() -> None:
 	if not args.path:
 		print("Error: no path provided.\n", file=sys.stderr)
 		print("Example:", file=sys.stderr)
-		print(r'  python watchdog.py "C:\Users\User\Documents"', file=sys.stderr)
+		print(r'  python file-watchdog.py "C:\Users\User\Documents"', file=sys.stderr)
 		print("\nHelp:", file=sys.stderr)
-		print("  python watchdog.py --help", file=sys.stderr)
+		print("  python file-watchdog.py --help", file=sys.stderr)
 		raise SystemExit(2)
 
 	directory = validate_directory(args.path)
 
 	# Create the log filename in the CURRENT WORKING DIRECTORY
-	log_filename = Path.cwd() / f"file_events_{int(time.time()):x}.log"
+	log_filename = Path.cwd() / f"watchdog_events_{int(time.time()):x}.log"
 
 	event_handler = FileEventHandler(log_filename)
 	observer = Observer()

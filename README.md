@@ -38,7 +38,7 @@ Before monitoring starts, the script will print whether the path:
 	```
 	[HEX_TIMESTAMP] event_type (e.g., modified): path\to\file.log
 	```
-* Events are also saved to a log file named `file_events_<timestamp>.log`, e.g., `file_events_6613a3f1.log`.
+* Events are also saved to a log file named `watchdog_events_<timestamp>.log`, e.g., `watchdog_events_6613a3f1.log`.
 * The log file is created in the **current working directory**.
 * Log file entries use ISO timestamp format:
 	```
