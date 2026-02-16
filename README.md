@@ -1,23 +1,23 @@
-# file-watchdog
+# fs-watchdog
 File system Watchdog wrapper (CLI).
 
 ## Install
 
 From PyPI:
 ```bash
-pip install file-watchdog
+pip install fs-watchdog
 ````
 
 (Recommended for CLI tools)
 
 ```bash
-pipx install file-watchdog
+pipx install fs-watchdog
 ```
 
 ## Usage
 
 ```bash
-file-watchdog <DIRECTORY_PATH>
+fs-watchdog <DIRECTORY_PATH>
 ```
 
 Examples:
@@ -25,13 +25,13 @@ Examples:
 Windows:
 
 ```bash
-file-watchdog "C:\Users\User\Documents"
+fs-watchdog "C:\Users\User\Documents"
 ```
 
 macOS / Linux:
 
 ```bash
-file-watchdog /Users/user/Documents
+fs-watchdog /Users/user/Documents
 ```
 
 You can also run as a module:
@@ -64,7 +64,7 @@ Press `Ctrl+C` to stop monitoring.
 
 * [github-stargazers](https://github.com/TAbdiukov/github-stargazers) – Python 3.13 – Github Stargazer Scraper.
 * [img2pdf_helper](https://github.com/TAbdiukov/img2pdf_helper) – Simplify img2pdf configuration and usage.
-* **<ins>file-watchdog</ins>** – Python 3.14 – file system Watchdog wrapper.
+* **<ins>fs-watchdog</ins>** – Python 3.14 – file system Watchdog wrapper.
 
 ----------------------------------
 **Tim Abdiukov**

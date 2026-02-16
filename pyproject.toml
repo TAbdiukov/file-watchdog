@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "file-watchdog"
+name = "fs-watchdog"
 dynamic = ["version"]
 description = "File system watchdog wrapper. Monitors a directory and logs events."
 readme = "README.md"
@@ -34,12 +34,12 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/TAbdiukov/file-watchdog"
-Issues = "https://github.com/TAbdiukov/file-watchdog/issues"
+Homepage = "https://github.com/TAbdiukov/fs-watchdog"
+Issues = "https://github.com/TAbdiukov/fs-watchdog/issues"
 
 [project.scripts]
-# This creates the command: file-watchdog ...
-file-watchdog = "file_watchdog.cli:main"
+# This creates the command: fs-watchdog ...
+fs-watchdog = "file_watchdog.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

@@ -38,7 +38,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        prog="file-watchdog",
+        prog="fs-watchdog",
         description="File system watchdog wrapper. Monitors a directory and logs events.",
     )
     parser.add_argument(
@@ -90,9 +90,9 @@ def main(argv: list[str] | None = None) -> None:
     if not args.path:
         print("Error: no path provided.\n", file=sys.stderr)
         print("Example:", file=sys.stderr)
-        print(r'  file-watchdog "C:\Users\User\Documents"', file=sys.stderr)
+        print(r'  fs-watchdog "C:\Users\User\Documents"', file=sys.stderr)
         print("\nHelp:", file=sys.stderr)
-        print("  file-watchdog --help", file=sys.stderr)
+        print("  fs-watchdog --help", file=sys.stderr)
         raise SystemExit(2)
 
     directory = validate_directory(args.path)
