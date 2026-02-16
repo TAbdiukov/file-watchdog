@@ -1,4 +1,10 @@
 # fs-watchdog
+
+[![GitHub](https://img.shields.io/badge/GitHub-TAbdiukov/fs--watchdog-black?logo=github)](https://github.com/TAbdiukov/fs-watchdog)
+[![PyPI Version](https://img.shields.io/pypi/v/fs-watchdog.svg)](https://pypi.org/project/fs-watchdog) 
+![License](https://img.shields.io/github/license/TAbdiukov/fs-watchdog)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/tabdiukov)
+
 File system Watchdog wrapper (CLI). Monitors a directory and logs events.
 
 ## Install
