@@ -1,5 +1,5 @@
 # fs-watchdog
-File system Watchdog wrapper (CLI).
+File system Watchdog wrapper (CLI). Monitors a directory and logs events.
 
 ## Install
 
