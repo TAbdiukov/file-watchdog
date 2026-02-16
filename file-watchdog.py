@@ -11,7 +11,6 @@ from datetime import datetime, timezone
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-
 class FileEventHandler(FileSystemEventHandler):
 	def __init__(self, log_path: Path):
 		super().__init__()
