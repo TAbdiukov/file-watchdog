@@ -4,7 +4,6 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "file-watchdog"
-version = "0.1.0"
 description = "File system watchdog wrapper. Monitors a directory and logs events."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -45,3 +44,6 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.dynamic]
+version = { attr = "file_watchdog.__version__" }
