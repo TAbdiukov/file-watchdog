@@ -1,49 +1,59 @@
 # file-watchdog
-Python 3.14 – file system Watchdog wrapper.
+File system Watchdog wrapper (CLI).
 
 ## Install
 
-```
-pip install -r requirements.txt
+From PyPI:
+```bash
+pip install file-watchdog
+````
+
+(Recommended for CLI tools)
+
+```bash
+pipx install file-watchdog
 ```
 
 ## Usage
 
-Pass the directory path you want to monitor as an argument:
-
-```
-python file-watchdog.py <DIRECTORY_PATH>
+```bash
+file-watchdog <DIRECTORY_PATH>
 ```
 
 Examples:
 
 Windows:
-```
-python file-watchdog.py "C:\Users\User\Documents"
+
+```bash
+file-watchdog "C:\Users\User\Documents"
 ```
 
 macOS / Linux:
-```
-python file-watchdog.py /Users/user/Documents
-````
 
-Before monitoring starts, the script will print whether the path:
-- was found or not found,
-- is a directory (not a file),
-- is accessible (permission check).
+```bash
+file-watchdog /Users/user/Documents
+```
+
+You can also run as a module:
+
+```bash
+python -m file_watchdog <DIRECTORY_PATH>
+```
 
 ## Output
 
 * Events are logged to the console in the following format:
-	```
-	[HEX_TIMESTAMP] event_type (e.g., modified): path\to\file.log
-	```
-* Events are also saved to a log file named `watchdog_events_<timestamp>.log`, e.g., `watchdog_events_6613a3f1.log`.
+
+  ```
+  [HEX_TIMESTAMP] event_type: path/to/file
+  ```
+* Events are also saved to a log file named `watchdog_events_<timestamp>.log`.
 * The log file is created in the **current working directory**.
-* Log file entries use ISO timestamp format:
-	```
-	[2024-04-02T12:34:56.789012] event_type (e.g., modified): path\to\file.log
-	```
+* Log file entries use ISO timestamp format (UTC, Z suffix):
+
+  ```
+  [2024-04-02T12:34:56.789012Z] event_type: path/to/file
+  ```
 
 ## Finishing up
 
