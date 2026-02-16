@@ -8,16 +8,6 @@ import argparse
 from pathlib import Path
 from datetime import datetime, timezone
 
-# ---------------------------------------------------------------------
-# IMPORTANT NOTE:
-# To prevent import errors like:
-#   ModuleNotFoundError: No module named 'watchdog.observers'; 'watchdog' is not a package
-# we remove this script's directory from sys.path before importing the dependency.
-# ---------------------------------------------------------------------
-_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-if sys.path and os.path.abspath(sys.path[0]) == _SCRIPT_DIR:
-	sys.path.pop(0)
-
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
