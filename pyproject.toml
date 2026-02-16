@@ -14,11 +14,18 @@ keywords = ["watchdog", "filesystem", "monitoring", "cli", "automation"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
-  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Environment :: Console",
   "Operating System :: OS Independent",
   "Topic :: System :: Monitoring",
   "Topic :: System :: Filesystems",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: System Administrators",
+  "Intended Audience :: Developers",
 ]
 
 dependencies = [
@@ -27,6 +34,7 @@ dependencies = [
 
 [project.urls]
 Repository = "https://github.com/TAbdiukov/file-watchdog"
+Issues = "https://github.com/TAbdiukov/file-watchdog/issues"
 
 [project.scripts]
 # This creates the command: file-watchdog ...
