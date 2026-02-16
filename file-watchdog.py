@@ -6,12 +6,10 @@ import sys
 import time
 import argparse
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 # ---------------------------------------------------------------------
 # IMPORTANT NOTE:
-# This script file is named "watchdog.py", which can shadow the third-
-# party PyPI package named "watchdog" when importing.
 # To prevent import errors like:
 #   ModuleNotFoundError: No module named 'watchdog.observers'; 'watchdog' is not a package
 # we remove this script's directory from sys.path before importing the dependency.
@@ -31,7 +29,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 	def on_any_event(self, event):
 		hex_time = f"{int(time.time()):x}"
-		iso_time = datetime.utcnow().isoformat(timespec="microseconds")
+		iso_time = datetime.now(timezone.utc).isoformat(timespec="microseconds").replace("+00:00", "Z")
 
 		# to stdout
 		print(f"[{hex_time}] {event.event_type}: {event.src_path}")
