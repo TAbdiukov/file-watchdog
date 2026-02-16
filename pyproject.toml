@@ -34,7 +34,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage\ = "https://github.com/TAbdiukov/file-watchdog"
+Homepage = "https://github.com/TAbdiukov/file-watchdog"
 Issues = "https://github.com/TAbdiukov/file-watchdog/issues"
 
 [project.scripts]
