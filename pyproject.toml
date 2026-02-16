@@ -8,8 +8,7 @@ version = "0.1.0"
 description = "File system watchdog wrapper. Monitors a directory and logs events."
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{ name = "Tim Abdiukov" }]
-license = { file = "LICENCE" }
+authors = [{ name = "Tim Abdiukov", email = "TAbdiukov@gmail.com" }]
 keywords = ["watchdog", "filesystem", "monitoring", "cli", "automation"]
 classifiers = [
   "Programming Language :: Python :: 3",
