@@ -23,6 +23,7 @@ classifiers = [
   "Topic :: System :: Monitoring",
   "Topic :: System :: Filesystems",
   "Topic :: Utilities",
+  "Development Status :: 4 - Beta",
   "Intended Audience :: Information Technology",
   "Intended Audience :: System Administrators",
   "Intended Audience :: Developers",
@@ -33,7 +34,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/TAbdiukov/file-watchdog"
+Homepage\ = "https://github.com/TAbdiukov/file-watchdog"
 Issues = "https://github.com/TAbdiukov/file-watchdog/issues"
 
 [project.scripts]
